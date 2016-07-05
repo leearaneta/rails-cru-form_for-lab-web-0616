@@ -1,0 +1,8 @@
+<% # require 'pry' %>
+
+<% @songs.each do |song| %>
+<p><%= song.name %></p>
+<% artist = Artist.find(song.artist_id) %>
+<% # binding.pry %>
+<%= song.genre_id %>
+<% end %>
